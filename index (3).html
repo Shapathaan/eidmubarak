@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eid Mubarak</title>
+
+<!-- 📲 WHATSAPP PREVIEW -->
+<meta property="og:title" content="👑 Eid Mubarak - SHABAZ & FAMILY">
+<meta property="og:description" content="Tap to view cinematic Eid wish 💎🌙">
+<meta property="og:image" content="herobg.jpg">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: gold;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
+    url('herobg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 🌙 MOON */
+.moon {
+  margin-top: 30px;
+  width: 80px;
+  filter: drop-shadow(0 0 20px gold);
+  animation: floatMoon 4s ease-in-out infinite;
+}
+
+@keyframes floatMoon {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+  100% { transform: translateY(0); }
+}
+
+/* 💠 GLASS (DULL) */
+.glass {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 420px;
+  padding: 20px;
+
+  background: rgba(255,255,255,0.03);
+  border-radius: 20px;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 0 25px rgba(255,215,0,0.08);
+
+  text-align: center;
+}
+
+/* ✨ ANIMATION */
+.line, .arabic, .final, .from {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 💎 DIAMOND EFFECT */
+.diamond {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.diamond::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.8), transparent);
+  transform: skewX(-20deg);
+  animation: shine 4s infinite;
+}
+
+@keyframes shine {
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
+
+/* TEXT */
+.main {
+  font-size: 26px;
+  text-shadow: 0 0 15px gold, 0 0 40px gold;
+}
+
+.sub {
+  font-size: 20px;
+}
+
+.line {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.small {
+  font-size: 15px;
+}
+
+.final {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.from {
+  margin-top: 15px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+/* ⏱️ TIMING */
+.main { animation-delay: 0.5s; }
+.sub { animation-delay: 1.5s; }
+.l1 { animation-delay: 2.5s; }
+.l2 { animation-delay: 3.5s; }
+.l3 { animation-delay: 4.5s; }
+.l4 { animation-delay: 5.5s; }
+.l5 { animation-delay: 6.5s; }
+.l6 { animation-delay: 7.5s; }
+.l7 { animation-delay: 8.5s; }
+.final { animation-delay: 9.5s; }
+.from { animation-delay: 10.5s; }
+
+/* ✨ PARTICLES */
+.particle {
+  position: fixed;
+  width: 3px;
+  height: 3px;
+  background: gold;
+  border-radius: 50%;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(-10vh); opacity: 0; }
+}
+
+/* 💥 RIPPLE */
+.ripple {
+  position: fixed;
+  border: 2px solid gold;
+  border-radius: 50%;
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  from { width: 10px; height: 10px; }
+  to { width: 200px; height: 200px; opacity: 0; }
+}
+</style>
+</head>
+
+<body onclick="startAll(event)">
+
+<img src="moon1.png" class="moon">
+
+<div class="glass">
+
+  <div class="arabic main diamond">👑🌙✨ 𝕰𝖎𝖉 𝑀𝓊𝒷𝒶𝓇𝒶𝓀 ✨🌙👑</div>
+  <div class="arabic sub">عِيد مُبَارَك 🤍</div>
+
+  <div class="line l1">𝓣𝓪𝓺𝓪𝓫𝓫𝓪𝓵 𝓐𝓵𝓵𝓪𝓱𝓾 𝓶𝓲𝓷𝓷𝓪</div>
+  <div class="arabic small l2">تَقَبَّلَ اللَّهُ مِنَّا</div>
+
+  <div class="line l3">May Allah accept our prayers ✨</div>
+  <div class="arabic small l4">اللّهُمَّ اجْعَلْ هٰذَا الْعِيدَ فَرَحًا</div>
+
+  <div class="line l5">Peace 🤍 Light 🌙 Prosperity 💫</div>
+
+  <div class="line l6">𝓚𝓾𝓵𝓵𝓾 𝓪𝓪𝓶𝓲𝓷 ✨</div>
+  <div class="arabic small l7">كُلُّ عَامٍ وَأَنْتُمْ بِخَيْر</div>
+
+  <div class="final diamond">💎🌙 𝙴𝙸𝙳 𝑀𝓊𝒷𝒶𝓇𝒶𝓀 🌙💎</div>
+  <div class="from">— SHABAZ & FAMILY —</div>
+
+</div>
+
+<!-- 🎵 AUDIO -->
+<audio id="music" loop preload="auto">
+  <source src="eidmub.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let musicStarted = false;
+
+function startAll(e){
+
+  if(!musicStarted){
+    let audio = document.getElementById("music");
+
+    audio.muted = false;
+    audio.play().then(()=>{
+      musicStarted = true;
+    }).catch(()=>{
+      document.body.addEventListener('touchstart', playMusicOnce);
+    });
+  }
+
+  // ripple
+  let r=document.createElement("div");
+  r.className="ripple";
+  r.style.left=e.clientX+"px";
+  r.style.top=e.clientY+"px";
+  document.body.appendChild(r);
+  setTimeout(()=>r.remove(),1000);
+}
+
+function playMusicOnce(){
+  let audio = document.getElementById("music");
+  audio.play();
+  document.body.removeEventListener('touchstart', playMusicOnce);
+}
+
+// particles
+for(let i=0;i<60;i++){
+  let p=document.createElement("div");
+  p.className="particle";
+  p.style.left=Math.random()*100+"%";
+  p.style.animationDuration=(4+Math.random()*4)+"s";
+  document.body.appendChild(p);
+}
+</script>
+
+</body>
+</html>
